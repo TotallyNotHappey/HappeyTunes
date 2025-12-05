@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist & Music List</title>
+    <style>
+        /* General Styles: Black Background, White Text */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        /* Container for all artists */
+        #artists-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        /* Artist Card Styles */
+        .artist-card {
+            border: 1px solid #fff; /* White Border */
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        /* Artist Header (Image and Name) */
+        .artist-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .artist-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 2px solid #fff; /* Border around the profile picture */
+        }
+        .artist-name {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        /* Song List Styles */
+        .song-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        .song-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .song-list li:last-child {
+            border-bottom: none;
+        }
+        .song-title {
+            flex-grow: 1;
+        }
+        .song-player audio {
+            width: 200px; /* Adjust size for audio player */
+            background: #222; /* Darker background for player control bar */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎧 Artists & Tracks</h1>
+
+    <div id="artists-container">
+        Loading music artists...
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
