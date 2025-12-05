@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HappeyTunes</title>
     <style>
+        /* 1. Define the Custom Font */
+        @font-face {
+            font-family: 'W95FA'; /* Name the font family */
+            src: url('fonts/W95FA.otf') format('opentype'); /* Adjust path if needed */
+            font-weight: normal;
+            font-style: normal;
+        }
+
         /* General Styles: Black Background, White Text */
         body {
             background-color: #000;
             color: #fff;
-            font-family: sans-serif;
+            /* 2. Apply the Custom Font */
+            font-family: 'W95FA', sans-serif; 
             margin: 20px;
         }
         /* Container for all artists */
@@ -78,7 +87,7 @@
     <h1>HappeyTunes</h1>
 
     <div id="artists-container">
-        Loading music artists...
+        loading....
     </div>
 
     <script src="script.js"></script>
