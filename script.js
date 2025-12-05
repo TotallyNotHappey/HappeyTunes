@@ -1,6 +1,6 @@
 // --- CONFIGURATION: EDIT THESE VALUES ---
-const GITHUB_USERNAME = 'YOUR_USERNAME'; // e.g., 'octocat'
-const GITHUB_REPOSITORY_NAME = 'YOUR_REPOSITORY_NAME'; // e.g., 'my-music-repo'
+const GITHUB_USERNAME = 'TotallyNotHappey'; // e.g., 'octocat'
+const GITHUB_REPOSITORY_NAME = 'HappeyTunes'; // e.g., 'my-music-repo'
 const GITHUB_BRANCH = 'main'; // Change to 'master' if needed
 // ----------------------------------------
 
@@ -11,10 +11,10 @@ const artistsContainer = document.getElementById('artists-container');
 
 // Loading states for better UX
 const LOADING_STATES = {
-    INITIAL: 'Loading artists...',
-    FETCHING: 'Fetching music data...',
-    NO_ARTISTS: 'No artist folders found in the repository.',
-    ERROR: 'Failed to load music. Please check your configuration.'
+    INITIAL: 'loading music...',
+    FETCHING: 'loading music...',
+    NO_ARTISTS: 'error',
+    ERROR: 'error'
 };
 
 // Audio file extensions to look for
