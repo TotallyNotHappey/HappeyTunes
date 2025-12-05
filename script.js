@@ -1,7 +1,7 @@
 // --- CONFIGURATION: EDIT THESE VALUES ---
 const GITHUB_USERNAME = 'TotallyNotHappey'; // e.g., 'octocat'
 const GITHUB_REPOSITORY_NAME = 'HappeyTunes'; // e.g., 'my-music-repo'
-const GITHUB_BRANCH = 'main'; // Change to 'master' if needed
+const GITHUB_BRANCH = 'master'; // Change to 'master' if needed
 // ----------------------------------------
 
 const REPO_API_URL = `https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_REPOSITORY_NAME}/contents/`;
