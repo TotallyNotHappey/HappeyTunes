@@ -239,7 +239,7 @@ async function renderMusicList() {
         if (error.message.includes('Repository not found')) {
             errorMessage = `
                 <h3>Repository Not Found</h3>
-                <p>Could not find: ${GITHUB_USERNAME}/${GITHUB_REPOSITORY_NAME}</p>
+                <p>Could not find a: ${GITHUB_USERNAME}/${GITHUB_REPOSITORY_NAME}</p>
                 <p>Please check:</p>
                 <ul>
                     <li>Your GitHub username is correct</li>
